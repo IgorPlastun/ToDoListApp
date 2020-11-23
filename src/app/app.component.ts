@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {ToDoListItem} from "../app/to-do-list-item"
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'lesson1';
+  title = 'lesson1';  
+  getTitle = function():string{
+    return this.title;
+  }
 }
